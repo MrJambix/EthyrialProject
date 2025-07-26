@@ -1,0 +1,9 @@
+*.vsidx
+*.obj
+*.pdb
+*.db
+*.db-wal
+*.db
+*.db-shm
+IL2CPPInjector/PayloadDLL/LuaGameBridge/.vs/LuaGameBridge/v17/Browse.VC.db
+*.db

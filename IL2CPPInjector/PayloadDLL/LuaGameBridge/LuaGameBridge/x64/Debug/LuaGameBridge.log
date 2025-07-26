@@ -1,0 +1,227 @@
+﻿  pch.cpp
+  dllmain.cpp
+  Source.cpp
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11): error C2059: syntax error: '('
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11): error C2091: function returns function
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11): error C2143: syntax error: missing ')' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11): error C2143: syntax error: missing ',' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11): error C2059: syntax error: 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11): error C2059: syntax error: ')'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75292,11): error C2059: syntax error: '('
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75292,11): error C2091: function returns function
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75292,11): error C2143: syntax error: missing ')' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75292,11): error C2143: syntax error: missing ',' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75292,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75292,11): error C2535: 'int (__cdecl *Microsoft_Win32_RegistryKey_StaticFields::HKEY(ULONG_PTR))(void)': member function already defined or declared
+  (compiling source file '/Source.cpp')
+      D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11):
+      see declaration of 'Microsoft_Win32_RegistryKey_StaticFields::HKEY'
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75292,11): error C2059: syntax error: 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75292,11): error C2059: syntax error: ')'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75293,11): error C2059: syntax error: '('
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75293,11): error C2091: function returns function
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75293,11): error C2143: syntax error: missing ')' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75293,11): error C2143: syntax error: missing ',' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75293,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75293,11): error C2535: 'int (__cdecl *Microsoft_Win32_RegistryKey_StaticFields::HKEY(ULONG_PTR))(void)': member function already defined or declared
+  (compiling source file '/Source.cpp')
+      D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11):
+      see declaration of 'Microsoft_Win32_RegistryKey_StaticFields::HKEY'
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75293,11): error C2059: syntax error: 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75293,11): error C2059: syntax error: ')'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75294,11): error C2059: syntax error: '('
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75294,11): error C2091: function returns function
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75294,11): error C2143: syntax error: missing ')' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75294,11): error C2143: syntax error: missing ',' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75294,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75294,11): error C2535: 'int (__cdecl *Microsoft_Win32_RegistryKey_StaticFields::HKEY(ULONG_PTR))(void)': member function already defined or declared
+  (compiling source file '/Source.cpp')
+      D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11):
+      see declaration of 'Microsoft_Win32_RegistryKey_StaticFields::HKEY'
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75294,11): error C2059: syntax error: 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75294,11): error C2059: syntax error: ')'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75295,11): error C2059: syntax error: '('
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75295,11): error C2091: function returns function
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75295,11): error C2143: syntax error: missing ')' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75295,11): error C2143: syntax error: missing ',' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75295,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75295,11): error C2535: 'int (__cdecl *Microsoft_Win32_RegistryKey_StaticFields::HKEY(ULONG_PTR))(void)': member function already defined or declared
+  (compiling source file '/Source.cpp')
+      D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11):
+      see declaration of 'Microsoft_Win32_RegistryKey_StaticFields::HKEY'
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75295,11): error C2059: syntax error: 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75295,11): error C2059: syntax error: ')'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75296,11): error C2059: syntax error: '('
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75296,11): error C2091: function returns function
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75296,11): error C2143: syntax error: missing ')' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75296,11): error C2143: syntax error: missing ',' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75296,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75296,11): error C2535: 'int (__cdecl *Microsoft_Win32_RegistryKey_StaticFields::HKEY(ULONG_PTR))(void)': member function already defined or declared
+  (compiling source file '/Source.cpp')
+      D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11):
+      see declaration of 'Microsoft_Win32_RegistryKey_StaticFields::HKEY'
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75296,11): error C2059: syntax error: 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75296,11): error C2059: syntax error: ')'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75297,11): error C2059: syntax error: '('
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75297,11): error C2091: function returns function
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75297,11): error C2143: syntax error: missing ')' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75297,11): error C2143: syntax error: missing ',' before 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75297,11): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75297,11): error C2535: 'int (__cdecl *Microsoft_Win32_RegistryKey_StaticFields::HKEY(ULONG_PTR))(void)': member function already defined or declared
+  (compiling source file '/Source.cpp')
+      D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75291,11):
+      see declaration of 'Microsoft_Win32_RegistryKey_StaticFields::HKEY'
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75297,11): error C2059: syntax error: 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(75297,11): error C2059: syntax error: ')'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(85193,33): error C2059: syntax error: 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(85194,33): error C2059: syntax error: 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(85194,33): error C2535: 'System_IO_TextWriter_o *System_Console_StaticFields::__acrt_iob_func(void)': member function already defined or declared
+  (compiling source file '/Source.cpp')
+      D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(85193,33):
+      see declaration of 'System_Console_StaticFields::__acrt_iob_func'
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(85195,33): error C2059: syntax error: 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(85195,33): error C2556: 'System_IO_TextReader_o *System_Console_StaticFields::__acrt_iob_func(void)': overloaded function differs only by return type from 'System_IO_TextWriter_o *System_Console_StaticFields::__acrt_iob_func(void)'
+  (compiling source file '/Source.cpp')
+      D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(85193,33):
+      see declaration of 'System_Console_StaticFields::__acrt_iob_func'
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(85195,33): error C2371: 'System_Console_StaticFields::__acrt_iob_func': redefinition; different basic types
+  (compiling source file '/Source.cpp')
+      D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(85193,33):
+      see declaration of 'System_Console_StaticFields::__acrt_iob_func'
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(86094,35): error C2059: syntax error: 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(86095,36): error C2059: syntax error: 'constant'
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(86095,36): error C2556: 'System_IO_CStreamWriter_o *System_TermInfoDriver_Fields::__acrt_iob_func(void)': overloaded function differs only by return type from 'System_IO_StreamReader_o *System_TermInfoDriver_Fields::__acrt_iob_func(void)'
+  (compiling source file '/Source.cpp')
+      D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(86094,35):
+      see declaration of 'System_TermInfoDriver_Fields::__acrt_iob_func'
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(86095,36): error C2371: 'System_TermInfoDriver_Fields::__acrt_iob_func': redefinition; different basic types
+  (compiling source file '/Source.cpp')
+      D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(86094,35):
+      see declaration of 'System_TermInfoDriver_Fields::__acrt_iob_func'
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(86156,10): error C2628: 'int32_t' followed by '__int32' is illegal (did you forget a ';'?)
+  (compiling source file '/Source.cpp')
+  
+D:\GIT\EthyrialProject\IL2CPPInjector\PayloadDLL\LuaGameBridge\game\il2cpp.h(86156,2): error C2208: 'int': no members defined using this type
+  (compiling source file '/Source.cpp')
+  
+  Generating Code...

@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1B234D7F-C4B5-46B8-B9BE-0D30DACF2089}|LuaGameBridge.vcxproj|D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1B234D7F-C4B5-46B8-B9BE-0D30DACF2089}|LuaGameBridge.vcxproj|solutionrelative:Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1B234D7F-C4B5-46B8-B9BE-0D30DACF2089}|LuaGameBridge.vcxproj|D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1B234D7F-C4B5-46B8-B9BE-0D30DACF2089}|LuaGameBridge.vcxproj|solutionrelative:dllmain.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B234D7F-C4B5-46B8-B9BE-0D30DACF2089}|LuaGameBridge.vcxproj|D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1B234D7F-C4B5-46B8-B9BE-0D30DACF2089}|LuaGameBridge.vcxproj|solutionrelative:pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B234D7F-C4B5-46B8-B9BE-0D30DACF2089}|LuaGameBridge.vcxproj|D:\\GIT\\ETHYRIALPROJECT\\IL2CPPINJECTOR\\PAYLOADDLL\\LUAGAMEBRIDGE\\GAME\\IL2CPP.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1B234D7F-C4B5-46B8-B9BE-0D30DACF2089}|LuaGameBridge.vcxproj|solutionrelative:GAME\\IL2CPP.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\ext\\LuaJIT\\include\\lua.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ext\\LuaJIT\\include\\lua.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +30,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "pch.cpp",
+              "DocumentMoniker": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\pch.cpp",
+              "RelativeDocumentMoniker": "pch.cpp",
+              "ToolTip": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\pch.cpp",
+              "RelativeToolTip": "pch.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-26T19:19:43.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "il2cpp.h",
+              "DocumentMoniker": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\game\\il2cpp.h",
+              "RelativeDocumentMoniker": "game\\il2cpp.h",
+              "ToolTip": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\game\\il2cpp.h",
+              "RelativeToolTip": "game\\il2cpp.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-26T19:01:08.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "lua.h",
+              "DocumentMoniker": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\ext\\LuaJIT\\include\\lua.h",
+              "RelativeDocumentMoniker": "ext\\LuaJIT\\include\\lua.h",
+              "ToolTip": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\ext\\LuaJIT\\include\\lua.h",
+              "RelativeToolTip": "ext\\LuaJIT\\include\\lua.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-07-26T18:37:01.072Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\Source.cpp",
+              "RelativeDocumentMoniker": "Source.cpp",
+              "ToolTip": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\Source.cpp",
+              "RelativeToolTip": "Source.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-26T18:32:55.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "dllmain.cpp",
               "DocumentMoniker": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\dllmain.cpp",
               "RelativeDocumentMoniker": "dllmain.cpp",
               "ToolTip": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\PayloadDLL\\LuaGameBridge\\dllmain.cpp",
               "RelativeToolTip": "dllmain.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-26T18:09:37.383Z",
               "EditorCaption": ""
