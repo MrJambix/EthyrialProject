@@ -14,13 +14,18 @@ namespace InjectorUI
         private string selectedDLLPath = "";
         private string settingsFile = "settings.cfg";
 
+        // Color theme state
+        private Color _primaryColor = Color.FromArgb(81, 200, 255);
+        private Color _backgroundColor = Color.FromArgb(34, 38, 49);
+        private Color _accentColor = Color.FromArgb(120, 180, 255);
+
         // Ethyrial Steam AppID from the official Steam page
         private const string ETHYRIAL_STEAM_APPID = "1277920";
 
         public Form1()
         {
             InitializeComponent();
-            LoadSettings();
+            LoadColors();
             ShowDashboard();
             Log("Welcome to Ethyrial Injector Pro!");
             Log("Ready. Select a DLL and launch or inject.");
@@ -103,10 +108,8 @@ namespace InjectorUI
 
         private string GetEthyrialExePath()
         {
-            if (!string.IsNullOrWhiteSpace(txtExePath.Text))
-                return txtExePath.Text.Trim();
-            // fallback
-            return @"C:\Program Files\Ethyrial\Ethyrial.exe";
+            // Removed path selection: always launches from Steam
+            return null;
         }
 
         private void UpdateSelectedDLLLabel()
@@ -280,59 +283,80 @@ namespace InjectorUI
             return true;
         }
 
-        // ---------------------- SETTINGS ----------------------
-        private void LoadSettings()
+        // ---------------------- SETTINGS (COLORS) ----------------------
+        private void buttonPrimaryColor_Click(object sender, EventArgs e)
         {
-            try
+            using (ColorDialog dlg = new ColorDialog())
             {
-                if (File.Exists(settingsFile))
+                dlg.Color = buttonPrimaryColor.BackColor;
+                if (dlg.ShowDialog() == DialogResult.OK)
                 {
-                    var lines = File.ReadAllLines(settingsFile);
-                    foreach (var line in lines)
-                    {
-                        var kv = line.Split(new[] { '=' }, 2);
-                        if (kv.Length == 2)
-                        {
-                            if (kv[0].Trim() == "EthyrialExePath")
-                                txtExePath.Text = kv[1].Trim();
-                        }
-                    }
-                }
-            }
-            catch
-            {
-                txtExePath.Text = @"C:\Program Files\Ethyrial\Ethyrial.exe";
-            }
-        }
-
-        private void SaveSettings()
-        {
-            try
-            {
-                File.WriteAllText(settingsFile, $"EthyrialExePath={txtExePath.Text.Trim()}\n");
-                lblSettingsSaved.Text = "Settings saved!";
-            }
-            catch
-            {
-                lblSettingsSaved.Text = "Error saving settings!";
-            }
-        }
-
-        private void buttonBrowseExe_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog ofd = new OpenFileDialog())
-            {
-                ofd.Filter = "EXE files (*.exe)|*.exe";
-                ofd.Title = "Select Ethyrial.exe";
-                if (ofd.ShowDialog() == DialogResult.OK)
-                {
-                    txtExePath.Text = ofd.FileName;
+                    _primaryColor = dlg.Color;
+                    buttonPrimaryColor.BackColor = dlg.Color;
                 }
             }
         }
-        private void buttonSaveSettings_Click(object sender, EventArgs e)
+        private void buttonBackgroundColor_Click(object sender, EventArgs e)
         {
-            SaveSettings();
+            using (ColorDialog dlg = new ColorDialog())
+            {
+                dlg.Color = buttonBackgroundColor.BackColor;
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    _backgroundColor = dlg.Color;
+                    buttonBackgroundColor.BackColor = dlg.Color;
+                }
+            }
+        }
+        private void buttonAccentColor_Click(object sender, EventArgs e)
+        {
+            using (ColorDialog dlg = new ColorDialog())
+            {
+                dlg.Color = buttonAccentColor.BackColor;
+                if (dlg.ShowDialog() == DialogResult.OK)
+                {
+                    _accentColor = dlg.Color;
+                    buttonAccentColor.BackColor = dlg.Color;
+                }
+            }
+        }
+        private void buttonSaveColors_Click(object sender, EventArgs e)
+        {
+            // Save colors to a config file
+            File.WriteAllText("colors.cfg", $"{_primaryColor.ToArgb()},{_backgroundColor.ToArgb()},{_accentColor.ToArgb()}\n");
+            lblSettingsSaved.Text = "Colors saved!";
+            ApplyTheme();
+        }
+        private void ApplyTheme()
+        {
+            this.BackColor = _backgroundColor;
+            panelMain.BackColor = _backgroundColor;
+            panelSidebar.BackColor = _backgroundColor;
+            panelTitleBar.BackColor = _primaryColor;
+            buttonHome.BackColor = _primaryColor;
+            buttonSettings.BackColor = _backgroundColor;
+            buttonAbout.BackColor = _backgroundColor;
+            buttonSaveColors.BackColor = _accentColor;
+            buttonPrimaryColor.BackColor = _primaryColor;
+            buttonBackgroundColor.BackColor = _backgroundColor;
+            buttonAccentColor.BackColor = _accentColor;
+        }
+        private void LoadColors()
+        {
+            if (File.Exists("colors.cfg"))
+            {
+                var vals = File.ReadAllText("colors.cfg").Split(',');
+                if (vals.Length == 3)
+                {
+                    _primaryColor = Color.FromArgb(int.Parse(vals[0]));
+                    _backgroundColor = Color.FromArgb(int.Parse(vals[1]));
+                    _accentColor = Color.FromArgb(int.Parse(vals[2]));
+                }
+            }
+            buttonPrimaryColor.BackColor = _primaryColor;
+            buttonBackgroundColor.BackColor = _backgroundColor;
+            buttonAccentColor.BackColor = _accentColor;
+            ApplyTheme();
         }
 
         // ---------------------- ABOUT ----------------------
