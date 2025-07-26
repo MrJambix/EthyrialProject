@@ -1,0 +1,9 @@
+D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\obj\Debug\InjectorUI.exe
+D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\obj\Debug\InjectorUI.csproj.AssemblyReference.cache
+D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\obj\Debug\InjectorUI.Properties.Resources.resources
+D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\obj\Debug\InjectorUI.csproj.GenerateResource.cache
+D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\obj\Debug\InjectorUI.csproj.CoreCompileInputs.cache
+D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\bin\Debug\InjectorUI.exe.config
+D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\bin\Debug\InjectorUI.exe
+D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\bin\Debug\InjectorUI.pdb
+D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\obj\Debug\InjectorUI.pdb

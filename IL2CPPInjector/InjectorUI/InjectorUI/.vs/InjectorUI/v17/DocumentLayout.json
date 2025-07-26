@@ -1,0 +1,103 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\InjectorUI\\InjectorUI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A20EAEF-894E-475D-AED0-CACBA1E75639}|InjectorUI.csproj|d:\\git\\ethyrialproject\\il2cppinjector\\injectorui\\injectorui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A20EAEF-894E-475D-AED0-CACBA1E75639}|InjectorUI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A20EAEF-894E-475D-AED0-CACBA1E75639}|InjectorUI.csproj|d:\\git\\ethyrialproject\\il2cppinjector\\injectorui\\injectorui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A20EAEF-894E-475D-AED0-CACBA1E75639}|InjectorUI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A20EAEF-894E-475D-AED0-CACBA1E75639}|InjectorUI.csproj|d:\\git\\ethyrialproject\\il2cppinjector\\injectorui\\injectorui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A20EAEF-894E-475D-AED0-CACBA1E75639}|InjectorUI.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A20EAEF-894E-475D-AED0-CACBA1E75639}|InjectorUI.csproj|d:\\git\\ethyrialproject\\il2cppinjector\\injectorui\\injectorui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7A20EAEF-894E-475D-AED0-CACBA1E75639}|InjectorUI.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A20EAEF-894E-475D-AED0-CACBA1E75639}|InjectorUI.csproj|d:\\git\\ethyrialproject\\il2cppinjector\\injectorui\\injectorui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7A20EAEF-894E-475D-AED0-CACBA1E75639}|InjectorUI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\InjectorUI\\InjectorUI\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\InjectorUI\\InjectorUI\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAADwv4oAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:42:08.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs [Design]",
+              "DocumentMoniker": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\InjectorUI\\InjectorUI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\InjectorUI\\InjectorUI\\Program.cs [Design]",
+              "RelativeToolTip": "Program.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:40:28.794Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\InjectorUI\\InjectorUI\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\InjectorUI\\InjectorUI\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:38:46.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\InjectorUI\\InjectorUI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\InjectorUI\\InjectorUI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:38:24.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\InjectorUI\\InjectorUI\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\GIT\\EthyrialProject\\IL2CPPInjector\\InjectorUI\\InjectorUI\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T16:38:20.016Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
