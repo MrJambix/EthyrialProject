@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -11,43 +12,154 @@ namespace InjectorUI
     public partial class Form1 : Form
     {
         private string selectedDLLPath = "";
+        private string settingsFile = "settings.cfg";
+
+        // Ethyrial Steam AppID from the official Steam page
+        private const string ETHYRIAL_STEAM_APPID = "1277920";
 
         public Form1()
         {
             InitializeComponent();
-
-            // Log welcome message and check for game on startup
-            Log("Welcome, please select DLL path.");
-            Log("Checking if game is running...");
+            LoadSettings();
+            ShowDashboard();
+            Log("Welcome to Ethyrial Injector Pro!");
+            Log("Ready. Select a DLL and launch or inject.");
             CheckGameOnStartup();
         }
 
+        // ---------------------- NAVIGATION ----------------------
+        private void ShowDashboard()
+        {
+            panelDashboard.Visible = true;
+            panelSettings.Visible = false;
+            panelAbout.Visible = false;
+        }
+        private void ShowSettings()
+        {
+            panelDashboard.Visible = false;
+            panelSettings.Visible = true;
+            panelAbout.Visible = false;
+        }
+        private void ShowAbout()
+        {
+            panelDashboard.Visible = false;
+            panelSettings.Visible = false;
+            panelAbout.Visible = true;
+        }
+
+        private void buttonHome_Click(object sender, EventArgs e) => ShowDashboard();
+        private void buttonSettings_Click(object sender, EventArgs e) => ShowSettings();
+        private void buttonAbout_Click(object sender, EventArgs e) => ShowAbout();
+
+        // ---------------------- TITLE BAR ----------------------
+        private void buttonMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void TitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                NativeMethods.ReleaseCapture();
+                NativeMethods.SendMessage(this.Handle, 0xA1, 0x2, 0);
+            }
+        }
+        private static class NativeMethods
+        {
+            [DllImport("user32.dll")]
+            public static extern bool ReleaseCapture();
+            [DllImport("user32.dll")]
+            public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        }
+
+        // ---------------------- LOG ----------------------
         private void Log(string message)
         {
-            richTextStatus.AppendText(message + Environment.NewLine);
+            if (richTextStatus.InvokeRequired)
+            {
+                richTextStatus.Invoke(new Action(() =>
+                {
+                    richTextStatus.AppendText($"[{DateTime.Now:HH:mm:ss}] {message}{Environment.NewLine}");
+                    richTextStatus.ScrollToCaret();
+                }));
+            }
+            else
+            {
+                richTextStatus.AppendText($"[{DateTime.Now:HH:mm:ss}] {message}{Environment.NewLine}");
+                richTextStatus.ScrollToCaret();
+            }
+        }
+
+        private void buttonClearLog_Click(object sender, EventArgs e)
+        {
+            richTextStatus.Clear();
+        }
+
+        // ---------------------- DASHBOARD CORE ----------------------
+
+        private string GetEthyrialExePath()
+        {
+            if (!string.IsNullOrWhiteSpace(txtExePath.Text))
+                return txtExePath.Text.Trim();
+            // fallback
+            return @"C:\Program Files\Ethyrial\Ethyrial.exe";
+        }
+
+        private void UpdateSelectedDLLLabel()
+        {
+            labelDLL.Text = string.IsNullOrEmpty(selectedDLLPath) ? "No DLL selected." : selectedDLLPath;
+        }
+
+        private void UpdateStatusLabel(string status, Color? color = null)
+        {
+            labelStatus.Text = status;
+            labelStatus.ForeColor = color ?? Color.Gold;
+        }
+
+        private void UpdateGameStatusLabel(bool running)
+        {
+            if (running)
+            {
+                labelGameStatus.Text = "Game: Running";
+                labelGameStatus.ForeColor = Color.LimeGreen;
+            }
+            else
+            {
+                labelGameStatus.Text = "Game: Not Running";
+                labelGameStatus.ForeColor = Color.OrangeRed;
+            }
         }
 
         private void CheckGameOnStartup()
         {
             var process = Process.GetProcessesByName("Ethyrial").FirstOrDefault();
+            UpdateGameStatusLabel(process != null);
             if (process == null)
             {
-                Log("Game not found!");
+                UpdateStatusLabel("Status: Game not found.", Color.OrangeRed);
             }
             else
             {
-                Log("Game found!");
+                UpdateStatusLabel("Status: Game found!", Color.LimeGreen);
             }
         }
 
         private void buttonSelectDLL_Click(object sender, EventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "DLL files (*.dll)|*.dll";
-            if (ofd.ShowDialog() == DialogResult.OK)
+            using (OpenFileDialog ofd = new OpenFileDialog())
             {
-                selectedDLLPath = ofd.FileName;
-                Log($"Selected DLL: {selectedDLLPath}");
+                ofd.Filter = "DLL files (*.dll)|*.dll";
+                ofd.Title = "Select DLL to Inject";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    selectedDLLPath = ofd.FileName;
+                    Log($"Selected DLL: {selectedDLLPath}");
+                    UpdateSelectedDLLLabel();
+                }
             }
         }
 
@@ -56,29 +168,61 @@ namespace InjectorUI
             if (string.IsNullOrEmpty(selectedDLLPath) || !File.Exists(selectedDLLPath))
             {
                 Log("Please select a valid DLL first.");
+                UpdateStatusLabel("Status: Invalid DLL!", Color.OrangeRed);
                 return;
             }
 
             Log("Searching for Ethyrial.exe...");
+            UpdateStatusLabel("Status: Searching for Ethyrial.exe...", Color.Gold);
 
             var process = Process.GetProcessesByName("Ethyrial").FirstOrDefault();
             if (process == null)
             {
-                Log("Could not find Ethyrial.exe! Please start the game first.");
+                Log("Could not find Ethyrial.exe! Please launch the game first.");
+                UpdateGameStatusLabel(false);
+                UpdateStatusLabel("Status: Ethyrial.exe not found!", Color.OrangeRed);
                 return;
             }
 
             Log("Found Ethyrial.exe! Attempting injection...");
+            UpdateGameStatusLabel(true);
+            UpdateStatusLabel("Status: Injecting...", Color.DeepSkyBlue);
 
             bool result = await Task.Run(() => InjectDLL(process.Id, selectedDLLPath));
             if (result)
             {
                 Log("DLL injected successfully!");
+                UpdateStatusLabel("Status: DLL injected successfully!", Color.LimeGreen);
             }
             else
             {
                 Log("DLL injection failed!");
+                UpdateStatusLabel("Status: DLL injection failed!", Color.OrangeRed);
             }
+        }
+
+        private void buttonLaunchGame_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = $"steam://run/{ETHYRIAL_STEAM_APPID}",
+                    UseShellExecute = true
+                });
+                Log("Requested launch via Steam.");
+                // Wait a few seconds and refresh status
+                Task.Delay(4000).ContinueWith(_ => Invoke(new Action(CheckGameOnStartup)));
+            }
+            catch (Exception ex)
+            {
+                Log("Failed to launch game via Steam: " + ex.Message);
+            }
+        }
+
+        private void buttonRefresh_Click(object sender, EventArgs e)
+        {
+            CheckGameOnStartup();
         }
 
         // DLL Injection logic
@@ -134,6 +278,71 @@ namespace InjectorUI
             CloseHandle(hThread);
             CloseHandle(hProcess);
             return true;
+        }
+
+        // ---------------------- SETTINGS ----------------------
+        private void LoadSettings()
+        {
+            try
+            {
+                if (File.Exists(settingsFile))
+                {
+                    var lines = File.ReadAllLines(settingsFile);
+                    foreach (var line in lines)
+                    {
+                        var kv = line.Split(new[] { '=' }, 2);
+                        if (kv.Length == 2)
+                        {
+                            if (kv[0].Trim() == "EthyrialExePath")
+                                txtExePath.Text = kv[1].Trim();
+                        }
+                    }
+                }
+            }
+            catch
+            {
+                txtExePath.Text = @"C:\Program Files\Ethyrial\Ethyrial.exe";
+            }
+        }
+
+        private void SaveSettings()
+        {
+            try
+            {
+                File.WriteAllText(settingsFile, $"EthyrialExePath={txtExePath.Text.Trim()}\n");
+                lblSettingsSaved.Text = "Settings saved!";
+            }
+            catch
+            {
+                lblSettingsSaved.Text = "Error saving settings!";
+            }
+        }
+
+        private void buttonBrowseExe_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Filter = "EXE files (*.exe)|*.exe";
+                ofd.Title = "Select Ethyrial.exe";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    txtExePath.Text = ofd.FileName;
+                }
+            }
+        }
+        private void buttonSaveSettings_Click(object sender, EventArgs e)
+        {
+            SaveSettings();
+        }
+
+        // ---------------------- ABOUT ----------------------
+        private void linkLabelGithub_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://github.com/MrJambix",
+                UseShellExecute = true
+            });
         }
     }
 }

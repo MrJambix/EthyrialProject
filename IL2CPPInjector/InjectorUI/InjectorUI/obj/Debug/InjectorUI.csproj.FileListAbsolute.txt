@@ -1,5 +1,6 @@
 D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\obj\Debug\InjectorUI.exe
 D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\obj\Debug\InjectorUI.csproj.AssemblyReference.cache
+D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\obj\Debug\InjectorUI.Form1.resources
 D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\obj\Debug\InjectorUI.Properties.Resources.resources
 D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\obj\Debug\InjectorUI.csproj.GenerateResource.cache
 D:\GIT\EthyrialProject\IL2CPPInjector\InjectorUI\InjectorUI\obj\Debug\InjectorUI.csproj.CoreCompileInputs.cache
