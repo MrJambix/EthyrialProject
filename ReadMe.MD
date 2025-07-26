@@ -28,9 +28,8 @@ A modern, user-friendly DLL injector for Ethyrial: Echoes of Yore.
 
 ## Requirements
 
-- .NET 6.0 or newer
-- Windows 10/11
-- Steam installed with Ethyrial: Echoes of Yore
+- [.NET 6.0 or newer](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+- [Steam](https://store.steampowered.com/about/) installed with [Ethyrial: Echoes of Yore](https://store.steampowered.com/app/1277920/Ethyrial_Echoes_of_Yore/)
 
 ## Troubleshooting
 
