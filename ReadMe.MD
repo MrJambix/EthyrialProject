@@ -1,5 +1,6 @@
 # Ethyrial Injector Pro
 
+![alt text](image.png)
 A modern, user-friendly DLL injector and buff tracker toolkit for **Ethyrial: Echoes of Yore**.
 
 ## Features
