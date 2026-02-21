@@ -97,8 +97,6 @@ A modern, user-friendly DLL injector and buff tracker toolkit for **Ethyrial: Ec
 ## Credits
 
 - Created by **MrJambix**
-- Special thanks to the Ethyrial Development Team
-
 ---
 
 **RYAN IS AWARE OF THIS PROJECT.**
