@@ -5,7 +5,7 @@ A modern, user-friendly DLL injector and buff tracker toolkit for **Ethyrial: Ec
 
 ## Features
 
-### 🎯 Buff Tracker Overlay
+### Buff Tracker Overlay
 - **Real-time buff/debuff monitoring** with color-coded timer bars
 - Permanent buffs shown with ∞ symbol
 - Stack count display on multi-stack effects
@@ -53,12 +53,12 @@ A modern, user-friendly DLL injector and buff tracker toolkit for **Ethyrial: Ec
 - Click to select, click "Select This Entity" to start tracking
 - Sorted: current player first, then by effect count
 
-### 🖥️ Console (Advanced)
+### Console (Advanced)
 - Debug console with color-coded logging
 - All features also accessible via keyboard shortcuts
 - Crash handler with error code reporting
 
-### ⌨️ Keyboard Shortcuts
+### Keyboard Shortcuts
 | Key | Action |
 |-----|--------|
 | `F1` | Find player (auto-detect, falls back to entity picker) |
