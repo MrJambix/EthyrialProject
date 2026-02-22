@@ -24,6 +24,24 @@ A modern, user-friendly DLL injector and buff tracker toolkit for **Ethyrial: Ec
 - Shows each tracked player's active effects with timers
 - Add players by name or pick from nearby entity list
 
+### Auto Loot
+- **Automatically loots all items** from open corpse loot windows
+- Hooks into `ContainerWindow.Update` on the Unity main thread for stability
+- Calls `LootAll` via `runtime_invoke` — same path as clicking the button in-game
+- Smart item detection: waits for container details to arrive from the server before looting
+- Grace period ensures the loot window is fully initialized before triggering
+- Re-checks item count after looting and retries if items remain
+- Skips empty containers and non-loot windows (inventory, bank, etc.)
+- Auto-disables after repeated failures to prevent crashes
+- Toggle via **Settings > Misc** tab
+- Zero work on background threads — runs entirely on the Unity main thread
+
+### Quick Cast
+- **Instantly casts spells** without requiring a target confirmation click
+- Hooks into the spell casting system to skip the targeting step
+- Toggle with `CTRL+Q`
+- Can be enabled/disabled from **Settings > Misc** tab
+
 ### Settings GUI (F11)
 - **Full dark-themed custom-painted settings window**
 - 4 tabs: Options | Buffs | Raid | Entities
@@ -71,6 +89,7 @@ A modern, user-friendly DLL injector and buff tracker toolkit for **Ethyrial: Ec
 | `F8` | Clear stacks history |
 | `F9` | Raid config (console) |
 | `F11` | **Settings Window (GUI)** |
+| `CTRL+Q` | **Toggle Quick Cast** |
 | `END` | Save all configs + Unload |
 
 ### Persistent Configuration
@@ -82,7 +101,9 @@ A modern, user-friendly DLL injector and buff tracker toolkit for **Ethyrial: Ec
 - IL2CPP runtime resolver for Unity game internals
 - GDI+ rendered overlays with transparency and anti-aliasing
 - Multi-threaded: separate overlay, data, and input threads
-- Safe memory reading with `IsBadReadPtr` validation
+- Main-thread hooks for Auto Loot and Quick Cast (Unity-safe)
+- Safe memory reading with `IsBadReadPtr` validation and SEH wrappers
+- `runtime_invoke` for managed method calls — proper IL2CPP calling convention
 - DLL injection via standard injector
 
 ## How to Use
@@ -91,8 +112,9 @@ A modern, user-friendly DLL injector and buff tracker toolkit for **Ethyrial: Ec
 2. Run the injector and inject the DLL
 3. Wait for the console to show "READY"
 4. Press `F1` to find your player (or `F11` → Entity Picker)
-5. Press `F11` to open Settings and configure overlays, buffs, and raid tracking
-6. All overlays are draggable — position them wherever you like
+5. Press `F11` to open Settings and configure overlays, buffs, raid tracking, Auto Loot, and Quick Cast
+6. Press `CTRL+Q` to toggle Quick Cast on/off
+7. All overlays are draggable — position them wherever you like
 
 ## Credits
 
