@@ -3,6 +3,54 @@
 ![alt text](image.png)
 A modern, user-friendly DLL injector and buff tracker toolkit for **Ethyrial: Echoes of Yore**.
 
+## Planned
+### Telegraph
+
++0x30  RPGLibrary.SpellTargetType  TargetType      <-- spell shape type
++0x34  System.Boolean              SelfTarget
++0x58  System.Single               MaxRange         <-- how far it reaches
++0x5C  System.Single               CastTime         <-- wind-up duration
++0x64  System.Single               ChannelTime
++0xA0  RPGLibrary.ProgressInfo     CurrentChannelProgress
++0xA8  RPGLibrary.SpellPattern     Pattern          <-- the shape data!
+
++0x134  RPGLibrary.Directions      _direction       <-- (inherited from Entity) facing
++0x138  RPGLibrary.Position        _position        <-- (inherited from Entity) world pos
++0x248  Dictionary<String,Spell>   spellsDict       <-- all spells
++0x250  List<Spell>                spells           <-- all spells list
++0x258  DictionaryList<ProgressInfoType,ProgressInfo>  progresses  <-- active casts
++0x34C  Boolean                    IsBoss
++0x34D  Boolean                    IsElite
+OnProgressStarted(params=2)                          <-- hook target
+OnProgressEnded(params=2)                            <-- hook target
+
++0x20  MeshFilter       _meshFilter
++0x28  MeshRenderer     _meshRenderer
++0x30  Mesh             _mesh
++0x38  Vector3[]        _vertices
++0x40  Color32[]        _colors
++0x48  EntityModel      _entityModel
++0x5C  Single           _outerRadius
++0x60  Single           _midRadius
++0x64  Single           _innerRadius
++0x68  Vector2          _patternOffset     <-- interesting!
++0x70  Boolean          _dirty
++0x74  HitboxDisplay.Type  _currentType
+SetType(params=1)
+SetSize(params=1)
+RebuildColors()
+
++0x38  Entity           _entity
++0x138 HitboxDisplay    HitboxDisplay      <-- DIRECT REFERENCE to the hitbox mesh!
+
++0x98  UnityEngine.Camera  myCamera        <-- for world-to-screen
++0x58  RPGLibrary.Position MyWorldPosition
+Static: Instance
+
+WorldToScreenPoint(params=1)  native=00007FF82DB359B0
+WorldToScreenPoint(params=2)  native=00007FF82DB356B0
+get_main(params=0)            native=00007FF82DB36410
+
 ## Features
 
 ### Buff Tracker Overlay
